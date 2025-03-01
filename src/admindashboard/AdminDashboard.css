@@ -1,0 +1,74 @@
+.dashboard{
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dashboard-container{
+    display: flex;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    align-items: center;
+    gap: 40px;
+}
+.dashboard-right{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
+                -4px -4px 4px rgba(0, 0, 0, 0.25);
+}
+.dashboard-right-top{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.dashboard-btn{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+thead{
+    background-color: #b4d7b6;
+}
+.th-two{
+    padding: 10px;
+    width: 500px;
+    margin: 10px;
+}
+.tr-body td{
+    padding: 10px;
+}
+@media (max-width: 1024px) {
+    .dashboard{
+        margin: 20px 20px;   
+    }
+    .dashboard-container{
+        flex-direction: column-reverse;
+    }
+    .dashboard-right{
+        width: 500px;
+        gap: 10px;
+    }
+    .dashboard-right-top{
+        font-size: 30px;
+    }
+    .dashboard-btn{
+        width: 400px;
+        font-size: 30px;
+    }
+    .dashboard-head-roll th{
+        font-size: 30px;
+    }
+    .tr-body td{
+        font-size: 24px;
+    }
+}
